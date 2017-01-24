@@ -114,6 +114,18 @@ Daedalus.ClientApi.deleteWallet('XXX')()
   })
 ```
 
+_blockchainSlotDuration_
+
+```javascript
+// average duration of a block to get accepted into blockchain
+Daedalus.ClientApi.blockchainSlotDuration()
+  .then(function(value) {
+    console.log('SUCCESS', value);
+  }, function(reason) {
+    console.log(reason);
+  })
+```
+
 
 _send_
 
