@@ -70,7 +70,7 @@ _getWallet_
 
 ```javascript
 // XXX - any wallet id
-Daedalus.ClientApi.getWallet('XXX')()
+Daedalus.ClientApi.getWallet('XXX')
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
@@ -86,7 +86,7 @@ Daedalus.ClientApi.newWallet(
     'CWTPersonal'
   , 'ADA'
   , 'wallet name'
-  , 'mnemonic words')()
+  , 'mnemonic words')
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
@@ -101,12 +101,23 @@ _generateMnemonic_
 Daedalus.ClientApi.generateMnemonic()
 ```
 
+_nextUpdate_
+
+```javascript
+Daedalus.ClientApi.nextUpdate()
+  .then(function(value) {
+    console.log('SUCCESS', value);
+  }, function(reason) {
+    console.log('ERROR', reason);
+  })
+```
+
 
 _deleteWallet_
 
 ```javascript
 // XXX - any wallet id
-Daedalus.ClientApi.deleteWallet('XXX')()
+Daedalus.ClientApi.deleteWallet('XXX')
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
@@ -132,7 +143,7 @@ _send_
 ```javascript
 // IdFrom - wallet id to send amount from
 // IdTo - wallet id to send amount to
-Daedalus.ClientApi.send('IdFrom', 'IdTo', 80)()
+Daedalus.ClientApi.send('IdFrom', 'IdTo', 80)
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
@@ -147,7 +158,7 @@ _history_
 // XXX - wallet id
 // 0   - skip
 // 10  - limit
-Daedalus.ClientApi.getHistory('XXX', 0, 10)()
+Daedalus.ClientApi.getHistory('XXX', 0, 10)
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
@@ -162,7 +173,7 @@ _searchHistory_
 // bla - search if title contains this term
 // 0   - skip
 // 10  - limit
-Daedalus.ClientApi.searchHistory('XXX', 'bla', 0, 10)()
+Daedalus.ClientApi.searchHistory('XXX', 'bla', 0, 10)
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
@@ -175,7 +186,7 @@ _isValidAddress_
 
 ```javascript
 // XXX - wallet id
-Daedalus.ClientApi.isValidAddress('XXX', 'ADA')()
+Daedalus.ClientApi.isValidAddress('XXX', 'ADA')
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
@@ -191,7 +202,7 @@ Daedalus.ClientApi.notify(
    function(msg) { return function() { console.log('msg ', msg) } },
    // error callback
    function(error) { return function() { console.log('error ', error) } }
- )();
+ );
 ```
 
 
