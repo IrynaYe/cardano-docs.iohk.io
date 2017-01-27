@@ -16,7 +16,7 @@ proof of stake that is scientifically proved to be secure.
 
 The most important thing about picking proof of stake algorithm over
 proof of work, which is adopted by Bitcoin is the energy consumption
-considerations. Running Bitcoin protocol is very a tremendously
+considerations. Running Bitcoin protocol is a tremendously
 expensive endeavor. It is estimated, that 3.8 American Households can be
 powered for a day by the energy spent to generate one Bitcoin
 transaction. The energy requirements for running Bitcoin protocol only
@@ -61,13 +61,13 @@ matters for the sake of Proof of Stake.
 
 ## Follow the Satoshi
 
-Let's elaborate a little bit on how slot leader gets selected. The
+Let's elaborate a little bit on how a slot leader gets selected. The
 smallest, atomic, piece of value is called a “coin”. In Bitcoin, atomic
 piece is called “Satoshi”, honoring the creator of Bitcoin, Satoshi
 Nakamoto. Fundamentally, we can say that the ledger produces
 distribution of coins. Follow the Satoshi is an algorithm that
 verifiably picks a coin, provided randomness. When your coin gets
-selected, you become slot leader and can listen to transactions
+selected, you become a slot leader and can listen to transactions
 announced by others, make a block of those transactions, sign it with
 your secret key and publish it to the network. Of course, you don't have
 to do it manually, your node will take care of everything.
