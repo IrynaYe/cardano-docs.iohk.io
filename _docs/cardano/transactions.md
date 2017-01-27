@@ -7,7 +7,7 @@ group: cardano
 # Transactions in Cardano SL
 
 You can think of transactions in Cardano SL as entities that consist of
-list of inputs and a list of outputs. Outputs of a transaction can later
+a list of inputs and a list of outputs. Outputs of a transaction can later
 be used as inputs for another transaction.
 
 Every node (except for SPV, or lightweight nodes) in the network
