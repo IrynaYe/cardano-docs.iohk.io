@@ -82,7 +82,7 @@ DHT peer is the following: `--peer HOST:PORT/HOST_ID`, for example
 `discover.memorici.de:21989/MHdtsP-oPf7UWly7QuXnLK5RDB8=`.
 
 [//]: # (TODO: Actually put a small dev-only net with a discoverable)
-[//]: # (peers which will send a recruitment propsal message to people)
+[//]: # (peers which will send a recruitment proposal message to people)
 [//]: # (who bothered to build the system from scratch in the early days)
 [//]: # (of testnet release)
 
@@ -94,7 +94,7 @@ addresses in the genesis block. The distributions that are supported
 are flat distribution and Bitcoin distribution. Spending and VSS keys
 are generated for genesis block. If a node has access to a genesis key
 mapping, the index of the secret key in this mapping can be provided
-using `--vss-genesis N` and `--spending-genesis N`, where `N` is index
+using `--vss-genesis N` and `--spending-genesis N`, where `N` is the index
 in this mapping.
 
 Example of a local invoaction connecting to HostID
@@ -149,16 +149,16 @@ into block of depth `k` (i.e stable). This way there's no possibility
 of producing more transactions than a node can include into blocks.
 
 Each round is split to `(R + 2)` phases. On each phase transactions are
-sent with current TPS rate. On the first phase no measurements are taken.gq
-On the last phase no new transactions get emmitted, only confirmations
-for sent ones being collected.
+sent with current TPS rate. At the first phase no measurements are taken.
+At the last phase no new transactions get emitted, only confirmations
+for the sent ones being collected.
 
 Each phase takes `(k + P) * slotDuration` seconds, where `P` is
-approximate amount of slots needed for a successful transaction to be
+an approximate amount of slots needed for a successful transaction to be
 published in block.
 
-Transactions are sent in a few threads. Each thread uses its own
-transaction pool derived from its own index in genesis block.
+Transactions are sent in several threads. Each thread uses its own
+transaction pool derived from its own index in the genesis block.
 
 Here is an example of invocation of `cardano-smart-generator` sending
 transactions from node number zero:
@@ -200,7 +200,7 @@ are generated, proceed to the next step.
 To build Daedalus Bridge, some JavaScript heavy-lifting must be done.
 Currently Nix expressions don't install Node.js and NPM, so
 those have to be installed manually. To do that, consult the repositories
-of the package manager of according OS or download binaries from [the
+of the package manager of the relevant OS or download binaries from [the
 net](https://nodejs.org/en/download/) you also will need the following
 npm packages: `bower`, `pulp`, `purescript`. Those can be installed with
 
@@ -223,7 +223,7 @@ manually running `npm link daedalus-bridge`.
 ## Building Daedalus
 
 If the instructions of building Cardano SL and the Bridge have been followed,
-building Daedalus wallet is as simple as cloning Daedalus' repository:
+building of a Daedalus wallet is as simple as cloning of a Daedalus' repository:
 
 ```
 git clone https://github.com/input-output-hk/daedalus.git
