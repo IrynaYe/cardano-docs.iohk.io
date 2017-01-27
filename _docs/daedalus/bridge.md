@@ -95,6 +95,18 @@ Daedalus.ClientApi.newWallet(
 ```
 
 
+_restoreWallet_
+
+```javascript
+Daedalus.ClientApi.restoreWallet('mnemonic words')
+  .then(function(value) {
+    console.log('SUCCESS', value);
+  }, function(reason) {
+    console.log('ERROR', reason);
+  })
+```
+
+
 _generateMnemonic_
 
 ```javascript
