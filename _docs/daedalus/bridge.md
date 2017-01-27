@@ -145,7 +145,24 @@ _history_
 
 ```javascript
 // XXX - wallet id
-Daedalus.ClientApi.getHistory('XXX')()
+// 0   - skip
+// 10  - limit
+Daedalus.ClientApi.getHistory('XXX', 0, 10)()
+  .then(function(value) {
+    console.log('SUCCESS', value);
+  }, function(reason) {
+    console.log(reason);
+  })
+```
+
+_searchHistory_
+
+```javascript
+// XXX - wallet id
+// bla - search if title contains this term
+// 0   - skip
+// 10  - limit
+Daedalus.ClientApi.searchHistory('XXX', 'bla', 0, 10)()
   .then(function(value) {
     console.log('SUCCESS', value);
   }, function(reason) {
