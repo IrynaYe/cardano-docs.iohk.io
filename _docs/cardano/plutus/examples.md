@@ -40,7 +40,7 @@ Cons lists are also a familiar type:
 
     data List a = { Nil | Cons a (List a) }
 
-This demonstrates the use of parametric types, where he, `List a` has a type
+This demonstrates the use of parametric types, where `List a` has a type
 parameter `a` for the type of elements. So, for example, `List Nat` is the type
 of lists of Peano numerals.
 
