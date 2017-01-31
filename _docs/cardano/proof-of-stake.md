@@ -15,9 +15,9 @@ proof of stake that is scientifically proved to be secure.
 ## Why Proof of Stake?
 
 The most important thing about picking proof of stake algorithm over
-proof of work, which is adopted by Bitcoin is the energy consumption
-considerations. Running Bitcoin protocol is very a tremendously
-expensive endeavor. It is estimated, that 3.8 American Households can be
+proof of work, which is adopted by Bitcoin is energy consumption
+considerations. Running Bitcoin protocol is a tremendously
+expensive endeavor. It is estimated that 3.8 American Households can be
 powered for a day by the energy spent to generate one Bitcoin
 transaction. The energy requirements for running Bitcoin protocol only
 grow as more and more Bitcoin miners sink money into mining and
@@ -25,8 +25,8 @@ difficulty of the problem that their computers (mining rigs) are
 cracking increases. This is why researchers did their best to
 investigate alternative ways to reach consensus such as using so-called
 BFT (Byzantine Fault Tolerant) consensus algorithms and Proof of Stake
-algorithms. First significant work on Proof of Stake was conducted by
-the team of Nxt cryptocurrency, however their protocol had significant
+algorithms. The first significant work on Proof of Stake was conducted by
+the team of Nxt cryptocurrency, however, their protocol had significant
 flaws and no formal verification.
 
 ## What is Proof of Stake?
@@ -50,7 +50,7 @@ system”.
 ## Proof of Stake
 
 Rather miners pouring money into mining rigs running the protocol, in
-order to participate in running the protocol in Proof of Stake
+order to participate in running of the protocol in the Proof of Stake
 environment, we say that “slot leaders” generate blocks for the
 blockchain. Anyone can become a slot leader, if the coin selection
 algorithm would select a coin they own. We say that this blockchain is
@@ -67,15 +67,15 @@ piece is called “Satoshi”, honoring the creator of Bitcoin, Satoshi
 Nakamoto. Fundamentally, we can say that the ledger produces
 distribution of coins. Follow the Satoshi is an algorithm that
 verifiably picks a coin, provided randomness. When your coin gets
-selected, you become slot leader and can listen to transactions
+selected, you become a slot leader and can listen to transactions
 announced by others, make a block of those transactions, sign it with
 your secret key and publish it to the network. Of course, you don't have
 to do it manually, your node will take care of everything.
 
 ## Multi Party Computation
 
-The matter of fueling Follow the Satoshi with randomness is another
-problem in itself. We're using Multi Party Computation approach when
+The matter of fueling of Follow the Satoshi with randomness is another
+problem in itself. We're using a Multi Party Computation approach when
 select nodes provide so called “commitments” and then those get
 “revealed”, producing a random value generated independently by
 participants of the network.
