@@ -162,7 +162,7 @@ patterns. Any failed match causes the entire program to fail to run, and will
 cause a transaction to be considered invalid.
 
 `Int`, `Float`, and `ByteString` literals can be patterns as well, so we can,
-for example, define the factorial function using case like so:
+for example, define the factorial function using the case like so:
 
     facInt : Int -> Int {
       facInt n = case n of {
