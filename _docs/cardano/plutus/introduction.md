@@ -83,7 +83,7 @@ which runs the computation `M`, binds its returned value to `x`, then runs the
 computation `N`. If the term `M` computes to `failure`, then the failure is
 propagated by the `do` construct and the whole thing computes to `failure`.
 
-This is most useful for building validator scripts for smart contracts. The
+This is the most useful for building validator scripts for smart contracts. The
 standard way this is done is by asking for a redeemer program of type `Comp A`
 and a validator program of type `A -> Comp B`, which are then composed to form
 `do { x <- redeemer ; validator x }`. The `redeemer` program is run, returning
