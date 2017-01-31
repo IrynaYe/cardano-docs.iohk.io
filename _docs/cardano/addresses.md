@@ -11,8 +11,8 @@ To send and receive value, Addresses are used in virtually any cryptocurrency.
 
 ## How Does an Address Look Like?
 
-In Cardano, we adopt Bitcoin way of encoding the address. It's called
-“Base 58” because it uses 58-symbol alphabet to encode data. Here is the
+In Cardano, we adopt the Bitcoin way of encoding the address. It's called
+“Base 58” because it uses a 58-symbol alphabet to encode data. Here is the
 alphabet we are using
 `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz`. Notably,
 it avoids both non-alphanumeric characters and letters which might look
@@ -51,7 +51,7 @@ anybody, hence the name. Public key mostly serves two purposes:
 Public key is also used to verify some protocol messages that have to be
 signed with the secret key.
 
-As we have discussed before, address is exactly the public hash key plus
+As we have discussed before, the address is exactly the public hash key plus
 CRC32, encoded in Base58.
 
 ## Pay to Script Hash
@@ -60,10 +60,10 @@ Interestingly, Cardano SL also supports Pay to Script Hash transactions,
 more often referred to as P2SH transactions, or just “P2SH”. The idea of
 P2SH is to provide a lot of flexibility to formulating complex rules for
 spending money. Instead of sending a transaction to a public key
-address, we create a validator script into which redemption script can
-be plugged in. To redeem funds, we evaluate validator script with
-redemption script as an argument. If validator script evaluates to
-`success`, money is gettning sent as specified by the redeemer.
+address, we create a validator script into which a redemption script can
+be plugged in. To redeem funds, we evaluate the validator script with
+the redemption script as an argument. If the validator script evaluates to
+`success`, money is getting sent as specified by the redeemer.
 Otherwise, nothing happens.
 
 To quote Bitcoin Wiki,
@@ -83,13 +83,13 @@ representation of arbitrary data, for example, when we're working with
 P2SH, we want validator scripts of arbitrary length to be hashed in a
 P2SH address of the same length that is easy to type in and operate
 with. Also, in order to have an authenticated data structure capturing
-information stored on the blockchain, we have to have the same kind of
+the information stored on the blockchain, we have to have the same kind of
 primitive. The requirements on such a function are manyfold:
 
  1. On the same input data it always returns the same output string
  2. It is computationally simple to calculate output for a given input
  3. It is computationally complex to reverse the process
- 4. A small change in input produces big change in output
+ 4. A small change in input produces a big change in output
  5. It is computationally complex to find two pieces of input data that
     produce the same output
 
