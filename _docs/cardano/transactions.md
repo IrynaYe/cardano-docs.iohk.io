@@ -7,13 +7,13 @@ group: cardano
 # Transactions in Cardano SL
 
 You can think of transactions in Cardano SL as entities that consist of
-list of inputs and a list of outputs. Outputs of a transaction can later
+a list of inputs and a list of outputs. Outputs of a transaction can later
 be used as inputs for another transaction.
 
 Every node (except for SPV, or lightweight nodes) in the network
 verifies transactions, so those nodes have to keep track of unspent
 outputs, this is called “utxo”, or “Unspent Transaction Outputs”. By
-tracking utxo, every node can validate that inputs in a published
+tracking utxo, every node can validate those inputs in a published
 transaction are indeed unspent outputs.
 
 Transactions are signed with the issuer's secret key. All of this,
